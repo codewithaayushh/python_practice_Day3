@@ -1,0 +1,118 @@
+🔤 All String Methods in Python
+1. Changing Case
+
+str.upper() → Converts string to uppercase.
+
+str.lower() → Converts string to lowercase.
+
+str.capitalize() → First character uppercase, rest lowercase.
+
+str.title() → Capitalizes the first letter of every word.
+
+str.swapcase() → Swaps uppercase ↔ lowercase.
+
+str.casefold() → Lowercase + more aggressive (for comparisons).
+
+2. Alignment & Formatting
+
+str.center(width, fillchar) → Centers string with padding.
+
+str.ljust(width, fillchar) → Left aligns.
+
+str.rjust(width, fillchar) → Right aligns.
+
+str.zfill(width) → Pads with zeros in front.
+
+str.format(*args, **kwargs) → Advanced string formatting.
+
+str.format_map(mapping) → Like format, but takes a dict.
+
+3. Searching & Finding
+
+str.find(sub) → Returns index of first occurrence, -1 if not found.
+
+str.rfind(sub) → Last occurrence index.
+
+str.index(sub) → Like find but raises error if not found.
+
+str.rindex(sub) → Like rfind but error if not found.
+
+str.count(sub) → Counts occurrences of substring.
+
+4. Testing / Checking (Boolean methods)
+
+str.startswith(prefix) → Checks if string starts with.
+
+str.endswith(suffix) → Checks if string ends with.
+
+str.isalpha() → True if all letters.
+
+str.isdigit() → True if all digits.
+
+str.isnumeric() → True if numeric (includes Unicode numbers).
+
+str.isdecimal() → True if only decimal numbers.
+
+str.isalnum() → True if alphanumeric (letters + numbers).
+
+str.islower() → All lowercase?
+
+str.isupper() → All uppercase?
+
+str.istitle() → Titlecase?
+
+str.isspace() → All whitespace?
+
+str.isascii() → True if all ASCII.
+
+str.isidentifier() → Valid Python identifier?
+
+str.isprintable() → True if all chars printable.
+
+5. Replacing & Modifying
+
+str.replace(old, new, count) → Replace substring.
+
+str.expandtabs(tabsize) → Replace \t with spaces.
+
+str.removeprefix(prefix) → Removes prefix (Python 3.9+).
+
+str.removesuffix(suffix) → Removes suffix (Python 3.9+).
+
+6. Splitting & Joining
+
+str.split(sep, maxsplit) → Splits string into list.
+
+str.rsplit(sep, maxsplit) → Splits from right.
+
+str.splitlines(keepends) → Splits at line breaks.
+
+str.partition(sep) → Splits into 3 parts: before, sep, after.
+
+str.rpartition(sep) → Like partition, from right.
+
+sep.join(iterable) → Joins iterable into string with separator.
+
+7. Whitespace & Trimming
+
+str.strip(chars) → Removes spaces (or given chars) from both sides.
+
+str.lstrip(chars) → Left strip.
+
+str.rstrip(chars) → Right strip.
+
+8. Encoding & Translation
+
+str.encode(encoding, errors) → Encodes to bytes.
+
+str.translate(table) → Replaces characters using mapping.
+
+str.maketrans(x, y, z) → Creates translation table.
+
+9. Others
+
+str.__contains__(sub) → "a" in "abc" check.
+
+str.__len__() → len(str).
+
+str.__iter__() → Iterates characters.
